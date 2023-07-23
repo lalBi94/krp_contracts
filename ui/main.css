@@ -1,0 +1,174 @@
+body {
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Helvetica", sans-serif;
+}
+
+.infos {
+    font-weight: bold;
+}
+
+.contract_travail, .editor_travail {
+    display: none;
+}
+
+*::selection {
+    background: transparent;
+}
+
+#container {
+    position: relative;
+    width: 760px;
+    min-height: 600px;
+    background: rgb(230,129,0);
+    background: linear-gradient(180deg, rgba(230,129,0,1) 0%, rgba(228,147,54,1) 35%, rgba(255,202,136,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    flex-direction: column;
+    gap: 60px;
+    box-shadow: 5px 5px 5px 5px white;
+    padding: 20px;
+}
+
+#container > #top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+#container > #top > .title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+#container > #top > img {
+    width: 50px;
+    height: auto;
+}
+
+#container > #top > #discord, #exit {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+#container > #top > #discord:hover {
+    transform: scale(0.95);
+    filter: brightness(0) saturate(100%) invert(58%) sepia(24%) saturate(6569%) hue-rotate(209deg) brightness(94%) contrast(86%);
+}
+
+#container > #top > #exit:hover {
+    transform: scale(0.95);
+    filter: brightness(0) saturate(100%) invert(21%) sepia(73%) saturate(2346%) hue-rotate(344deg) brightness(118%) contrast(85%);
+}
+
+#container > #top > #gif {
+    width: 150px;
+    height: auto;
+}
+
+#container > #middle > #pages {
+    position: relative;
+    height: 600px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > #middle > #pages > .page {
+    padding: 40px;
+    width: 370px;
+    height: 550px;
+    background: white;
+    border: 1px solid black;
+    font-size: 0.9rem;
+}
+
+#container > #middle > #pages > .one {
+    position: absolute;
+    transform: rotate(10deg);
+}
+
+#container > #middle > #pages >  .two {
+    position: absolute;
+    transform: rotate(-10deg);
+}
+
+#container > #middle > #pages > .three {
+    position: absolute;
+    z-index: 100;
+}
+
+#container > #middle > #pages > .three > #contracts-container > #page-bottom {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 50px;
+    right: 50px;
+    gap: 5px;
+}
+
+#container > #middle > #pages > .three > #contracts-container > #page-bottom > #title {
+    font-family: "Courier New", serif;
+}
+
+#container > #middle > #pages > .three > #contracts-container > #page-bottom > #signs {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border-top: 1px solid #000;
+}
+
+#container > #middle > #pages > .three > #contracts-container > #page-bottom > #signs > .sign {
+    font-family: "Courier New", serif;
+}
+
+#container > #bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#container > #bottom > button {
+    background: #E68100FF;
+    border: none;
+    color: white;
+    width: 110px;
+    height: 60px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 5px white;
+    transition: transform 0.1s ease-in-out;
+}
+
+#container > #bottom > #refuse {
+    background: red;
+}
+
+#container > #bottom > #accept {
+    background: green;
+}
+
+#container > #bottom > button:hover {
+    transition: 1s;
+    transform: scale(0.95);
+}
+
+#container > #bottom > #accept:hover {
+    background: #407940;
+}
+
+#container > #bottom > #refuse:hover {
+    background: #d06f6f;
+}

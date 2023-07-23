@@ -1,0 +1,108 @@
+<html lang="fr">
+    <head>
+        <title>Contracts - Krypton</title>
+        <meta ownerdiscord="bilaaaaaaaaaal">
+        <meta tebex="https://kryptonproject.tebex.io/">
+        <meta discordserver="https://discord.gg/xpCc6XmUaX">
+        <link rel="stylesheet" href="./main.css">
+        <meta charset="utf-8">
+        <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+        <div id="container">
+            <div id="top">
+                <img id="gif" src="./assets/pen_logo.gif" alt="">
+                <span class="title"><nobr>Contrat de travail</nobr></span>
+                <img id="discord" src="./assets/discord_logo.png" alt="">
+                <img id="exit" src="./assets/exit_logo.png" alt="">
+            </div>
+
+            <div id="middle">
+                <div id="pages">
+                    <div class="three page">
+                        <div id="contracts-container">
+                            <span>
+                                Entre l'employeur <span class="infos">
+                                    <input class="editor_travail" type="text" id="job" placeholder="Votre entreprise...">
+                                    <span class="contract_travail" id="enterprise">Entreprise</span>
+                                </span>
+
+                                représenté par <span class="infos">
+                                    <input class="editor_travail" type="text" id="owner" placeholder="Votre nom/prenom...">
+                                    <span class="contract_travail" id="employer_name">Nom Employeur</span>
+                                </span>, ci-après dénommé "l'employeur", d'une part,<br/>
+
+                                Et le salarié <span class="infos">
+                                    <input class="editor_travail" id="candidat" type="text" placeholder="Nom/Prenom du candidat...">
+                                    <span class="contract_travail" id="candidat_name">Nom Candidat</span>
+                                </span>
+
+                                , né(e) le <span class="infos">
+                                    <input class="editor_travail" type="text" id="birthday" placeholder="Date de naissance du candidat...">
+                                    <span class="contract_travail" id="candidat_birthday">An/ni/vv</span>
+                                </span>
+
+                                et résidant a <span class="infos">
+                                    <input class="editor_travail" type="text" id="home" placeholder="Residence du candidat...">
+                                    <span class="contract_travail" id="candidat_address">3 Residence du Candidat</span>
+                                </span>,
+
+                                ci-après dénommé "le salarié", d'autre part <br/><br>
+
+                                <u>Poste et fonctions</u> :
+                                Le salarié est employé en tant que <span class="infos">
+                                    <input class="editor_travail" type="text" id="functions" placeholder="Fonction du candidat...">
+                                    <span class="contract_travail" id="candidat_poste">Poste</span>
+                                </span> au sein de l'entreprise.
+
+                                Ses principales responsabilités sont
+                                les suivantes : <span class="infos">
+                                    <input class="editor_travail" id="role" type="text" placeholder="Responsabilites du candidat...">
+                                    <span class="contract_travail" id="candidat_responsabilité">Responsabilité</span>
+                                </span>. <br/><br>
+
+                                <u>Durée du contrat</u> : Le contrat est conclu pour une durée indéterminée.
+                                Il prend effet à compter de la date de signature des deux parties. <br><br>
+
+                                <u>Lieu de travail</u> : Le lieu principal d'exercice du salarié est situé à <span class="infos">
+                                    <input class="editor_travail" id="where" type="text" placeholder="Lieu de travail...">
+                                    <span class="contract_travail" id="entreprise_address">4 Lieu de Travail</span>
+                                </span>. Toutefois, l'employeur se réserve le droit de demander au salarié de se
+                                déplacer temporairement dans d'autres lieux, en fonction des besoins de l'entreprise.
+                                Cette obligation de confidentialité subsiste même après la fin du contrat de travail. <br/><br/>
+                                <u>Rémunération</u> : Le salarié sera rémunéré en fonction de sa production ou de ses résultats, selon la politique de l'entreprise. Le mode de paiement sera convenu entre l'employeur et le salarié.
+                            </span>
+
+                            <div id="page-bottom">
+                                <div id="title">
+                                    Signatures
+                                </div>
+
+                                <div id="signs">
+                                    <div class="p1 sign">
+                                        <span class="infos" id="name-p1"></span>
+                                    </div>
+                                    <div class="p2 sign">
+                                        <span class="infos" id="name-p2"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="one page"></div>
+                    <div class="two page"></div>
+                </div>
+            </div>
+
+            <div id="bottom">
+                <button id="refuse">Refuser</button>
+                <button id="accept">Accepter</button>
+            </div>
+        </div>
+
+        <script src="./main.js" type="text/javascript"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    </body>
+</html>
