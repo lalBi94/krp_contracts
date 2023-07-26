@@ -26,6 +26,7 @@ RegisterNetEvent("zod::asignJob", function(job)
 
     if(job and ESX.DoesJobExist(job.name, 0)) then
         if(xJob.name ~= job.name) then
+	    xPlayer.setJob(job.name, 0)
             TriggerClientEvent("zod::jobSucces", _src, job.label)
         else
             TriggerClientEvent("zod::jobSucces", _src, nil)

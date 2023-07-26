@@ -15,6 +15,14 @@
 
 ZODWorks = exports["ZODWorks"]:getSharedObject()
 
+Citizen.CreateThread(function()
+    print("^5?^1--------------------------------------^5?")
+    print("^1| Script: ^5krp_contracts                ^1|")
+    print("^1| ^7Author: bilaaaaaaaaaal (General ^3Zod^7) ^1|")
+    print("^1| ^2Powered ^3by ZODWorks                  ^1|")
+    print("^5?^1--------------------------------------^5?^7")
+end)
+
 RegisterNetEvent("zod::receiveContract", function(data)
     SetDisplay(true, "contract_travail", data)
 end)
@@ -33,7 +41,7 @@ RegisterCommand("contrat", function(a, r, raw)
 
     if(not target) then
         ZODWorks.Player:notify(Locales.KRPContracts.noPlayer[CurrentLocale])
-    elseif job.grade == 4 or job.grade == 3 then
+    elseif job.grade >= 3 then
         SetDisplay(true, "editor_travail", {
             job_name = job.name, 
             job_label = job.label
